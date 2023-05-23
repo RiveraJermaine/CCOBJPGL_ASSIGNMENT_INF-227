@@ -1,23 +1,27 @@
-import Explorers.*;
-import Planets.*;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class App {
+public class App extends Application {
 
     public static void main(String[] args) {
 
-        Planet mars = new Mars();
-        Planet saturn = new Saturn();
-        Planet mercury = new Mercury();
-
-        Explorer astronaut = new HumanExplorer();
-        Explorer rover = new RobotExplorer();
-
-        mars.accept(astronaut);
-        saturn.accept(astronaut);
-        mercury.accept(astronaut);
-
-        mars.accept(rover);
-        saturn.accept(rover);
-        mercury.accept(rover);
+        launch(args);
     }
+
+    public void start(Stage stage) throws Exception {
+
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/view/Restaurant.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }

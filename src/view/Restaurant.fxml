@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RestaurantController">
+   <children>
+      <ImageView fitHeight="202.0" fitWidth="169.0" layoutX="129.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/bk.png" />
+         </image>
+      </ImageView>
+       <Button fx:id="btn1" layoutX="145.0" layoutY="511.0" mnemonicParsing="false" onAction="#showInfo" style="-fx-background-color: red;" text="BURGERKING">
+        
+      </Button>
+      <ImageView fitHeight="175.0" fitWidth="254.0" layoutX="483.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/jollibee.png" />
+         </image>
+      </ImageView>
+       <Button fx:id="btn2" layoutX="553.0" layoutY="486.0" mnemonicParsing="false" onAction="#showInfo" style="-fx-background-color: red;" text="JOLLIBEE">
+      </Button>
+      <ImageView fitHeight="139.0" fitWidth="233.0" layoutX="278.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/wendys.png" />
+         </image>
+      </ImageView>
+       <Button fx:id="btn3" layoutX="363.0" layoutY="219.0" mnemonicParsing="false" onAction="#showInfo" style="-fx-background-color: red;" text="WENDYS">
+         
+      </Button>
+      <ImageView fitHeight="121.0" fitWidth="212.0" layoutX="547.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/shakeys.png" />
+         </image>
+      </ImageView>
+       <Button fx:id="btn4" layoutX="605.0" layoutY="206.0" mnemonicParsing="false" onAction="#showInfo" style="-fx-background-color: red;" text="SHAKEYS">
+         
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/mcdo.png" />
+         </image>
+      </ImageView>
+       <Button fx:id="btn5" layoutX="103.0" layoutY="219.0" mnemonicParsing="false" onAction="#showInfo" style="-fx-background-color: red;" text="MCDO">
+        
+      </Button>
+   </children>
+</AnchorPane>
